@@ -95,6 +95,7 @@
     <Compile Include="Chapter4\ch4-strategy-pattern\ConcreteStrategyB.cs" />
     <Compile Include="Chapter4\ch4-strategy-pattern\Context.cs" />
     <Compile Include="Chapter4\ch4-strategy-pattern\IStrategy.cs" />
+    <Compile Include="Chapter5\Account.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
