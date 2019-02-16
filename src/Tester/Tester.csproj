@@ -69,6 +69,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Chapter4\ch4-adapter-pattern\Adaptee.cs" />
+    <Compile Include="Chapter4\ch4-adapter-pattern\Adapter.cs" />
+    <Compile Include="Chapter4\ch4-adapter-pattern\IExpectedInterface.cs" />
+    <Compile Include="Chapter4\ch4-adapter-pattern\ObjectAdapter.cs" />
+    <Compile Include="Chapter4\ch4-adapter-pattern\TargetClass.cs" />
     <Compile Include="Chapter4\ch4-interface-definition\ClashingMethodSignatures.cs" />
     <Compile Include="Chapter4\ch4-interface-definition\ClassWithMethodSignatureClash.cs" />
     <Compile Include="Chapter4\ch4-interface-definition\ExplicitInterfaceClient.cs" />
@@ -86,6 +91,10 @@
     <Compile Include="Chapter4\ch4-null-object-pattern\NullUser.cs" />
     <Compile Include="Chapter4\ch4-null-object-pattern\User.cs" />
     <Compile Include="Chapter4\ch4-null-object-pattern\UserRepository.cs" />
+    <Compile Include="Chapter4\ch4-strategy-pattern\ConcreteStrategyA.cs" />
+    <Compile Include="Chapter4\ch4-strategy-pattern\ConcreteStrategyB.cs" />
+    <Compile Include="Chapter4\ch4-strategy-pattern\Context.cs" />
+    <Compile Include="Chapter4\ch4-strategy-pattern\IStrategy.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
