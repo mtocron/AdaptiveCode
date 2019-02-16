@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{758627D0-F394-4F61-915E-9F4BB954785D}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>Tester</RootNamespace>
     <AssemblyName>Tester</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
@@ -52,6 +52,9 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -66,12 +69,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Chapter4\ch4-adapter-pattern\Adaptee.cs" />
+    <Compile Include="Chapter4\ch4-adapter-pattern\Adapter.cs" />
+    <Compile Include="Chapter4\ch4-adapter-pattern\IExpectedInterface.cs" />
+    <Compile Include="Chapter4\ch4-adapter-pattern\ObjectAdapter.cs" />
+    <Compile Include="Chapter4\ch4-adapter-pattern\TargetClass.cs" />
+    <Compile Include="Chapter4\ch4-interface-definition\ClashingMethodSignatures.cs" />
+    <Compile Include="Chapter4\ch4-interface-definition\ClassWithMethodSignatureClash.cs" />
+    <Compile Include="Chapter4\ch4-interface-definition\ExplicitInterfaceClient.cs" />
+    <Compile Include="Chapter4\ch4-interface-definition\ExplicitInterfaceImplementation.cs" />
+    <Compile Include="Chapter4\ch4-interface-definition\IInterfaceOne.cs" />
+    <Compile Include="Chapter4\ch4-interface-definition\IInterfaceTwo.cs" />
+    <Compile Include="Chapter4\ch4-interface-definition\InmplementingMultipleInterfaces.cs" />
+    <Compile Include="Chapter4\ch4-interface-definition\ISimpleInterface.cs" />
+    <Compile Include="Chapter4\ch4-interface-definition\SimpleInterfaceImplementation.cs" />
+    <Compile Include="Chapter4\ch4-null-object-pattern-isnull-anti-pattern\IUser.cs" />
+    <Compile Include="Chapter4\ch4-null-object-pattern-isnull-anti-pattern\NullUser.cs" />
+    <Compile Include="Chapter4\ch4-null-object-pattern-isnull-anti-pattern\User.cs" />
+    <Compile Include="Chapter4\ch4-null-object-pattern\IUser.cs" />
+    <Compile Include="Chapter4\ch4-null-object-pattern\IUserRepository.cs" />
+    <Compile Include="Chapter4\ch4-null-object-pattern\NullUser.cs" />
+    <Compile Include="Chapter4\ch4-null-object-pattern\User.cs" />
+    <Compile Include="Chapter4\ch4-null-object-pattern\UserRepository.cs" />
+    <Compile Include="Chapter4\ch4-strategy-pattern\ConcreteStrategyA.cs" />
+    <Compile Include="Chapter4\ch4-strategy-pattern\ConcreteStrategyB.cs" />
+    <Compile Include="Chapter4\ch4-strategy-pattern\Context.cs" />
+    <Compile Include="Chapter4\ch4-strategy-pattern\IStrategy.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -96,8 +119,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Chapter4\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

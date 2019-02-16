@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+using Tester.Chapter4.ch4_adapter_pattern;
 
 namespace Tester
 {
@@ -14,9 +11,18 @@ namespace Tester
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            ObjectAdapterPattern();
+
+            Console.ReadKey();
         }
+
+        #region Object Adapterパターン
+        private static IExpectedInterface _Adapter = new ObjectAdapter(new TargetClass());
+        private static void ObjectAdapterPattern()
+        {
+            _Adapter.MethodA();
+        }
+        #endregion
+
     }
 }
